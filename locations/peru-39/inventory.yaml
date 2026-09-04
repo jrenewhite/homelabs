@@ -1,0 +1,13 @@
+site:
+  id: peru-39
+  name: Perú 39
+
+network:
+  lan_cidr: null
+  gateway: null
+
+router:
+  model: TL-R605-v2
+  mode: standalone
+
+infrastructure: []
