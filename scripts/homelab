@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+HERE="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
+usage() {
+  cat <<'EOF'
+Usage:
+  ./homelab COMMAND [...]
+
+Commands:
+  keygen             Create ~/.ssh/homelabing
+  authorize          Add homelabing.pub to one SSH account
+  bootstrap          Bootstrap one or more SSH accounts
+  inventory          Collect a host inventory
+
+  omada probe        Probe firmware CLI/read-only state
+  omada find-mac     Find a client by MAC
+  omada reserve-ip   Validate/probe a requested reservation
+  omada dns          Update DHCP DNS with public fallback safety
+  omada reboot       Reboot the gateway
+
+Examples:
+  ./homelab keygen
+  ./homelab bootstrap --target user@192.168.0.20
+  ./homelab inventory -H 192.168.0.20 -u user
+  ./homelab omada find-mac -H 192.168.0.1 -u admin --mac aa:bb:cc:dd:ee:ff
+EOF
+}
+
+(( $# )) || { usage; exit 0; }
+
+case "$1" in
+  keygen)
+    shift; exec "$HERE/homelab-keygen.sh" "$@"
+    ;;
+  authorize)
+    shift; exec "$HERE/homelab-authorize.sh" "$@"
+    ;;
+  bootstrap)
+    shift; exec "$HERE/homelab-bootstrap.sh" "$@"
+    ;;
+  inventory)
+    shift; exec "$HERE/homelab-inventory.sh" "$@"
+    ;;
+  omada)
+    shift
+    (( $# )) || die "Missing Omada command"
+    cmd="$1"; shift
+    case "$cmd" in
+      probe) exec "$HERE/omada/omada-probe.sh" "$@" ;;
+      find-mac) exec "$HERE/omada/omada-find-mac.sh" "$@" ;;
+      reserve-ip) exec "$HERE/omada/omada-reserve-ip.sh" "$@" ;;
+      dns) exec "$HERE/omada/omada-dns.sh" "$@" ;;
+      reboot) exec "$HERE/omada/omada-reboot.sh" "$@" ;;
+      *) printf 'Unknown Omada command: %s\n' "$cmd" >&2; exit 2 ;;
+    esac
+    ;;
+  -h|--help|help)
+    usage
+    ;;
+  *)
+    printf 'Unknown command: %s\n\n' "$1" >&2
+    usage >&2
+    exit 2
+    ;;
+esac
