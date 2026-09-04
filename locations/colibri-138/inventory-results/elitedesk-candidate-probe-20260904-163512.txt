@@ -1,0 +1,43 @@
+
+== DHCP candidate name=-- mac=1A-39-4A-09-6C-7D ip=192.168.0.224 ==
+tcp22=unreachable
+
+== DHCP candidate name=-- mac=3A-96-66-6F-C6-17 ip=192.168.0.209 ==
+tcp22=unreachable
+
+== DHCP candidate name=-- mac=5A-1C-1A-35-FC-3A ip=192.168.0.222 ==
+tcp22=unreachable
+
+== DHCP candidate name=-- mac=AC-67-84-8F-E7-08 ip=192.168.0.205 ==
+tcp22=unreachable
+
+== DHCP candidate name=-- mac=C0-E5-DA-7C-B2-2A ip=192.168.0.203 ==
+tcp22=unreachable
+
+== DHCP candidate name=-- mac=E0-B6-55-B3-1A-82 ip=192.168.0.207 ==
+tcp22=unreachable
+
+== DHCP candidate name=-- mac=E2-48-26-75-8C-54 ip=192.168.0.204 ==
+tcp22=unreachable
+
+== DHCP candidate name=Google-Home-Mini mac=48-D6-D5-91-3F-54 ip=192.168.0.201 ==
+tcp22=unreachable
+
+== DHCP candidate name=HP-ENVY-X360 mac=40-1A-58-4A-D3-68 ip=192.168.0.206 ==
+tcp22=reachable
+key_access=not_ready
+
+== DHCP candidate name=Joses-MBP mac=84-2F-57-AF-45-F0 ip=192.168.0.229 ==
+tcp22=unreachable
+
+== DHCP candidate name=POCO-F4-GT mac=6E-B6-C5-A2-41-9D ip=192.168.0.230 ==
+tcp22=unreachable
+
+== DHCP candidate name=POCO-M6 mac=1A-2C-7E-6A-06-7C ip=192.168.0.226 ==
+tcp22=unreachable
+
+== DHCP candidate name=Pixel-8-Pro mac=72-E1-BE-D2-D3-FA ip=192.168.0.225 ==
+tcp22=unreachable
+
+== DHCP candidate name=THINKPAD-E580 mac=0C-96-E6-7A-FC-AF ip=192.168.0.218 ==
+tcp22=unreachable

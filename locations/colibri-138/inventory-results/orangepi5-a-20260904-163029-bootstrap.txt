@@ -1,0 +1,6 @@
+
+== jrenewhite@192.168.0.16:22 ==
+Password for jrenewhite@192.168.0.16: Key installed and verified.
+Keeping this password for subsequent targets if needed.
+
+All targets completed successfully.

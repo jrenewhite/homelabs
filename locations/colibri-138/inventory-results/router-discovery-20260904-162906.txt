@@ -1,0 +1,723 @@
+Router password for jrenewhite@192.168.0.1: spawn ssh -p 22 -o StrictHostKeyChecking=accept-new -o UserKnownHostsFile=/home/jrenewhite/.ssh/known_hosts -o PreferredAuthentications=password,keyboard-interactive -o PubkeyAuthentication=no -o NumberOfPasswordPrompts=1 -o ConnectTimeout=8 jrenewhite@192.168.0.1
+jrenewhite@192.168.0.1's password: 
+
+>enable
+
+#show system-info
+System Description  - Omada Multi-Gigabit VPN Gateway
+System Name         - ER707-M2
+Contact Information - www.tp-link.com
+Hardware Version    - ER707-M2 v1.20
+Firmware Version    - 1.2.3 Build 20240822 Rel.52946
+Mac Address         - CC-BA-BD-D2-21-98
+System Time         - 2026-09-04 14:29:06
+Running Time        - 101 day - 7 hour - 36 min - 43 sec
+
+#config
+
+(config)#help
+
+Commands available:
+  help                                                 Show available commands
+  exit                                                 Exit from current mode
+  show system-info                                     Display system information.
+  show history                                         Display command history.
+  show monitor session                                 Display session information.
+  show interface status                                Display interface status information.
+  show interface switchport                            Display interface switch port information.
+  show interface vlan                                  Display interface VLAN information.
+  show arp                                             Display ARP entry information.
+  show vlan                                            Display VLAN information.
+  show vlan summary                                    Display summary of VLAN information.
+  show ikev1 policy                                    Display ikev1 module entry information.
+  show ikev2 policy                                    Display ikev2 module entry information.
+  show transform-set                                   Display transform-set module entry information.
+  show crypto map                                      Display map module entry information.
+  show crypto ipsec sa                                 Display the SA information of the established IPSec.
+  show all ikev1 policy                                Display all ikev1 module entry information.
+  show all ikev2 policy                                Display all ikev2 module entry information.
+  show all transform-set                               Display all transform-set module entry information.
+  show all crypto map                                  Display all map module entry information.
+  show access-list                                     Display entry information of ACL rules.
+  show system-time                                     Display system time.
+  show system-time ntp                                 Display system NTP server address.
+  show time-range                                      Display time-range module entry information.
+  show ip rip                                          Display RIP interface information.
+  show ip ospf                                         Display ospf information.
+  show ip ospf database                                Display the database information of OSPF.
+  show ip ospf neighbor                                Display OSPF neighbor table information.
+  show ip ospf interface                               Display the interface information of OSPF.
+  show ip route static                                 Display entry information of static IP route.
+  show ip dhcp server pool                             View DHCP server address pool.
+  show ip dhcp server status                           Check DHCP server status.
+  show ip http configuration                           Display http configuration.
+  show network                                         Display OSPF network information.
+  show nat virtual-server                              Display the entry information of NAT virtual-server.
+  show nat one-to-one                                  Display the entry information of one-to-one NAT.
+  show nat alg                                         Display the entry information of NAT ALG.
+  show dhcp server                                     Display DHCP server information.
+  show dhcp server client-list                         View DHCP server client information
+  show dhcp relay                                      Display DHCP relay information.
+  show snmp-server                                     Display SNMP server configuration.
+  show ssh configuration                               Display SSH configuration information.
+  clear history                                        Clear previously run commands.
+  monitor session port                                 Set the observation port number.
+  monitor session source port                          Set the mirrored port number.
+  monitor session enable                               Turn on port mirroring.
+  monitor session ingress                              Observe the received data stream.
+  monitor session egress                               Observe the sent data stream.
+  monitor session both                                 Observe the number of received and sent data streams.
+  no monitor session                                   Disable port mirroring or delete monitor session/monitor session source port.
+  no monitor session source port                       Delete monitor session source port.
+  no monitor session enable                            Disable port mirroring.
+  no vlan                                              Delete VLAN.
+  no crypto ikev1 policy                               Delete the ikev1 module entry.
+  no crypto ikev2 policy                               Delete the ikev2 module entry.
+  no crypto transform-set                              Remove the transform-set module entry.
+  no crypto map                                        Delete the map module entry.
+  no access-list ip                                    Delete the name of the ACL rule.
+  no time-range                                        Remove the time-range entry.
+  no router rip                                        Disable RIP.
+  no router ospf                                       Disable OSPF.
+  no ip route                                          Remove IP route entry.
+  no ip dhcp server pool                               Delete the DHCP server address pool.
+  no ip http server redirect-to-https                  Cancel http-to-https auto redirection.
+  no ip http secure-server                             Disable https service.
+  no nat alg                                           Delete NAT ALG entry.
+  no nat virtual-server                                Delete NAT virtual-server entry.
+  no nat one-to-one                                    Delete one-to-one NAT entry.
+  no service dhcp server                               Turn off DHCP.
+  no snmp-server v3 enable                             Reset SNMP v3 configuration.
+  no snmp-server v1-v2c enable                         Disable SNMP version 1 and version 2.
+  no snmp-server v1-v2c contact                        Reset the contact information of the SNMP server.
+  no snmp-server v1-v2c host                           Reset the host information of the SNMP server.
+  no snmp-server v1-v2c device-name                    Reset the device name information of the SNMP server.
+  no snmp-server v1-v2c location                       Reset the location information of the SNMP server.
+  no snmp-server v1-v2c community                      Reset the community information of the SNMP server.
+  no ssh server                                        Disable SSH service.
+  interface vlan                                       Enter interface mode by vlan id
+  interface switchport                                 Enter interface mode by port
+  vlan                                                 Create new VLAN.
+  router vlan                                          Enter VLAN view.
+  router rip                                           Enable RIP and enter RIP view.
+  router ospf                                          Enable OSPF and enter OSPF view.
+  crypto ikev1 policy                                  Create a new ikev1 module entry.
+  crypto ikev2 policy                                  Create a new ikev2 module entry.
+  crypto ipsec transform-set                           New transform-set module entry.
+  crypto map                                           Create a map module entry.
+  access-list ip rule deny                             Deny access, configure ACL related information.
+  access-list ip rule permit                           Allow access and configure ACL related information.
+  system-time manual                                   Manually set the system time.
+  system-time ntp timezone ntp-server1                 Set preferred NTP server address
+  system-time ntp timezone ntp-server1 ntp-server2     Set the secondary NTP server address
+  local-user username password                         Set local user password.
+  time-range week-date time-slice                      Configure time-range time.
+  ip route                                             Add IP route.
+  ip dhcp server pool                                  Create a DHCP server address pool and enter the DHCP configuration view.
+  ip http port                                         Set http port number.
+  ip http server redirect-to-https                     Set http-to-https auto redirection.
+  ip http secure-port                                  Set https port number.
+  ip http secure-server                                Enable https server.
+  ip http session timeout                              Set http session timeout.
+  nat alg                                              Turn on a NAT ALG function.
+  nat virtual-server                                   Create NAT virtual-server.
+  nat one-to-one                                       Create one-to-one NAT.
+  service dhcp server                                  Enable DHCP.
+  snmp-server v3 username password enable              Enable SNMP server v3.
+  snmp-server v1-v2c enable                            Enable SNMP version 1 and version 2.
+  snmp-server v1-v2c contact                           Set SNMP server contact.
+  snmp-server v1-v2c host                              Set SNMP server host.
+  snmp-server v1-v2c device-name                       Set SNMP server device name.
+  snmp-server v1-v2c location                          Set SNMP server location.
+  snmp-server v1-v2c community                         Set SNMP server community.
+  ssh server                                           Enable SSH service.
+
+(config)#show ip dhcp server pool
+---------------------------------------------------------------------	
+name:LAN	
+	status dhcp_mode:dhcp_server	
+	status enable:on	
+	status ipaddr_start:192.168.0.100	
+	status ipaddr_end:192.168.0.230	
+	status leasetime:120	
+---------------------------------------------------------------------	
+
+(config)#show dhcp server client-list
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:3A-96-66-6F-C6-17	
+	ipaddr:192.168.0.209	
+	leasetime:1:4:37	
+---------------------------------------------------------------------	
+client name:XVR Fam White Enciso	
+	bind:1	
+	interface:lan	
+	macaddr:08-ED-ED-04-D9-DD	
+	ipaddr:192.168.0.30	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:E0-B6-55-B3-1A-82	
+	ipaddr:192.168.0.207	
+	leasetime:1:6:11	
+---------------------------------------------------------------------	
+client name:POCO-M6	
+	bind:0	
+	interface:lan	
+	macaddr:1A-2C-7E-6A-06-7C	
+	ipaddr:192.168.0.226	
+	leasetime:1:57:3	
+---------------------------------------------------------------------	
+client name:HP-ENVY-X360	
+	bind:0	
+	interface:lan	
+	macaddr:40-1A-58-4A-D3-68	
+	ipaddr:192.168.0.206	
+	leasetime:1:24:59	
+---------------------------------------------------------------------	
+client name:POCO-F4-GT	
+	bind:0	
+	interface:lan	
+	macaddr:6E-B6-C5-A2-41-9D	
+	ipaddr:192.168.0.230	
+	leasetime:1:46:58	
+---------------------------------------------------------------------	
+client name:Joses-MBP	
+	bind:0	
+	interface:lan	
+	macaddr:84-2F-57-AF-45-F0	
+	ipaddr:192.168.0.229	
+	leasetime:1:14:25	
+---------------------------------------------------------------------	
+client name:Pixel-8-Pro	
+	bind:0	
+	interface:lan	
+	macaddr:72-E1-BE-D2-D3-FA	
+	ipaddr:192.168.0.225	
+	leasetime:1:6:5	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:1A-39-4A-09-6C-7D	
+	ipaddr:192.168.0.224	
+	leasetime:1:32:41	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:5A-1C-1A-35-FC-3A	
+	ipaddr:192.168.0.222	
+	leasetime:1:6:40	
+---------------------------------------------------------------------	
+client name:WYZE_CAKP2JFUS-D03F27DAC83E	
+	bind:1	
+	interface:lan	
+	macaddr:D0-3F-27-DA-C8-3E	
+	ipaddr:192.168.0.61	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:HL_PAN3-D03F27D957D6	
+	bind:1	
+	interface:lan	
+	macaddr:D0-3F-27-D9-57-D6	
+	ipaddr:192.168.0.62	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:THINKPAD-E580	
+	bind:0	
+	interface:lan	
+	macaddr:0C-96-E6-7A-FC-AF	
+	ipaddr:192.168.0.218	
+	leasetime:1:53:48	
+---------------------------------------------------------------------	
+client name:deco-X50-Outdoor	
+	bind:1	
+	interface:lan	
+	macaddr:98-BA-5F-E6-DB-F4	
+	ipaddr:192.168.0.35	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:KP303	
+	bind:1	
+	interface:lan	
+	macaddr:BC-07-1D-74-37-6D	
+	ipaddr:192.168.0.82	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:deco-S7	
+	bind:1	
+	interface:lan	
+	macaddr:98-25-4A-4F-2B-F0	
+	ipaddr:192.168.0.37	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:KP303	
+	bind:1	
+	interface:lan	
+	macaddr:BC-07-1D-74-2C-59	
+	ipaddr:192.168.0.80	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:KP303	
+	bind:1	
+	interface:lan	
+	macaddr:BC-07-1D-74-36-54	
+	ipaddr:192.168.0.83	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:KP303	
+	bind:1	
+	interface:lan	
+	macaddr:BC-07-1D-74-21-55	
+	ipaddr:192.168.0.81	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:DX_PVLOC_80482C93433E	
+	bind:1	
+	interface:lan	
+	macaddr:80-48-2C-93-43-3E	
+	ipaddr:192.168.0.67	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:DX_PVLOC_80482C93432F	
+	bind:1	
+	interface:lan	
+	macaddr:80-48-2C-93-43-2F	
+	ipaddr:192.168.0.66	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze_Wi-Fi_Chime	
+	bind:1	
+	interface:lan	
+	macaddr:80-48-2C-67-08-23	
+	ipaddr:192.168.0.70	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:1	
+	interface:lan	
+	macaddr:D0-C9-07-63-3D-B4	
+	ipaddr:192.168.0.87	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:HPF5C40E.lan	
+	bind:1	
+	interface:lan	
+	macaddr:E0-73-E7-F5-C4-0F	
+	ipaddr:192.168.0.42	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:deco-M4R	
+	bind:1	
+	interface:lan	
+	macaddr:C0-06-C3-2A-6C-64	
+	ipaddr:192.168.0.40	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:1	
+	interface:lan	
+	macaddr:AC-67-84-85-CB-BF	
+	ipaddr:192.168.0.52	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze Plug	
+	bind:1	
+	interface:lan	
+	macaddr:D0-3F-27-0C-6B-3B	
+	ipaddr:192.168.0.71	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:1	
+	interface:lan	
+	macaddr:44-07-0B-D9-DA-90	
+	ipaddr:192.168.0.53	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:deco-S7	
+	bind:1	
+	interface:lan	
+	macaddr:98-25-4A-4E-EE-50	
+	ipaddr:192.168.0.38	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:deco-S7	
+	bind:1	
+	interface:lan	
+	macaddr:98-25-4A-4F-2B-1C	
+	ipaddr:192.168.0.36	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:1	
+	interface:lan	
+	macaddr:D4-AD-FC-E9-68-38	
+	ipaddr:192.168.0.84	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze Bulb v2	
+	bind:1	
+	interface:lan	
+	macaddr:D0-3F-27-1D-2B-B1	
+	ipaddr:192.168.0.65	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:1	
+	interface:lan	
+	macaddr:AC-67-84-86-89-4B	
+	ipaddr:192.168.0.50	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:deco-X15	
+	bind:1	
+	interface:lan	
+	macaddr:EC-75-0C-D9-50-A4	
+	ipaddr:192.168.0.41	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:WYZE_CAM_OG	
+	bind:1	
+	interface:lan	
+	macaddr:D0-3F-27-FE-9F-99	
+	ipaddr:192.168.0.63	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze Plug	
+	bind:1	
+	interface:lan	
+	macaddr:D0-3F-27-06-7C-D1	
+	ipaddr:192.168.0.72	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze Plug	
+	bind:1	
+	interface:lan	
+	macaddr:D0-3F-27-0C-5F-12	
+	ipaddr:192.168.0.73	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze Outdoor Plug	
+	bind:1	
+	interface:lan	
+	macaddr:7C-78-B2-64-6F-FF	
+	ipaddr:192.168.0.75	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:deco-X50	
+	bind:1	
+	interface:lan	
+	macaddr:8C-90-2D-D1-2C-78	
+	ipaddr:192.168.0.32	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:WYZE_CAM_OG	
+	bind:1	
+	interface:lan	
+	macaddr:D0-3F-27-FE-96-C9	
+	ipaddr:192.168.0.64	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze Outdoor Plug	
+	bind:1	
+	interface:lan	
+	macaddr:7C-78-B2-98-6C-06	
+	ipaddr:192.168.0.77	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze Outdoor Plug	
+	bind:1	
+	interface:lan	
+	macaddr:7C-78-B2-64-76-FB	
+	ipaddr:192.168.0.76	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Wyze Outdoor Plug	
+	bind:1	
+	interface:lan	
+	macaddr:80-48-2C-5A-CB-20	
+	ipaddr:192.168.0.74	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:deco-X50	
+	bind:1	
+	interface:lan	
+	macaddr:8C-90-2D-D1-2C-4C	
+	ipaddr:192.168.0.33	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Google-Home-Mini	
+	bind:1	
+	interface:lan	
+	macaddr:20-DF-B9-4D-CD-94	
+	ipaddr:192.168.0.55	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Google-Home-Mini	
+	bind:1	
+	interface:lan	
+	macaddr:48-D6-D5-5B-17-25	
+	ipaddr:192.168.0.56	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Google-Home-Mini	
+	bind:1	
+	interface:lan	
+	macaddr:48-D6-D5-F1-54-B3	
+	ipaddr:192.168.0.58	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:Google-Home-Mini	
+	bind:1	
+	interface:lan	
+	macaddr:00-F6-20-58-C9-AB	
+	ipaddr:192.168.0.54	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:orangepi5-max	
+	bind:1	
+	interface:lan	
+	macaddr:C0-74-2B-FD-71-43	
+	ipaddr:192.168.0.15	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:orangepi5-a	
+	bind:1	
+	interface:lan	
+	macaddr:C6-CC-84-3D-E2-67	
+	ipaddr:192.168.0.16	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:orangepi5-ultra	
+	bind:1	
+	interface:lan	
+	macaddr:C0-74-2B-FC-59-86	
+	ipaddr:192.168.0.14	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:orangepi5-b	
+	bind:1	
+	interface:lan	
+	macaddr:C6-87-B3-C0-55-95	
+	ipaddr:192.168.0.17	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:ai-gpu	
+	bind:1	
+	interface:lan	
+	macaddr:58-47-CA-7F-84-B5	
+	ipaddr:192.168.0.13	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:services	
+	bind:1	
+	interface:lan	
+	macaddr:58-47-CA-79-08-69	
+	ipaddr:192.168.0.12	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:1	
+	interface:lan	
+	macaddr:AC-67-84-8F-18-DA	
+	ipaddr:192.168.0.51	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:AC-67-84-8F-E7-08	
+	ipaddr:192.168.0.205	
+	leasetime:1:51:14	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:E2-48-26-75-8C-54	
+	ipaddr:192.168.0.204	
+	leasetime:1:53:25	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:C0-E5-DA-7C-B2-2A	
+	ipaddr:192.168.0.203	
+	leasetime:1:6:40	
+---------------------------------------------------------------------	
+client name:Google-Home-Mini	
+	bind:0	
+	interface:lan	
+	macaddr:48-D6-D5-91-3F-54	
+	ipaddr:192.168.0.201	
+	leasetime:1:58:20	
+---------------------------------------------------------------------	
+client name:Google-Nest-Mini	
+	bind:1	
+	interface:lan	
+	macaddr:CC-F4-11-C2-49-4F	
+	ipaddr:192.168.0.57	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:1	
+	interface:lan	
+	macaddr:80-97-1B-02-2B-FF	
+	ipaddr:192.168.0.31	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:--	
+	bind:1	
+	interface:lan	
+	macaddr:D0-C9-07-63-AB-58	
+	ipaddr:192.168.0.86	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+
+(config)#show arp
+---------------------------------------------------------------------------------------------------	
+Interface     IP Address      MACAdress              Type      AGE       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.10    C4-65-16-AC-AB-37      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.11    C8-FF-BF-05-F4-46      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.12    58-47-CA-79-08-69      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.13    58-47-CA-7F-84-B5      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.14    C0-74-2B-FC-59-86      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.15    C0-74-2B-FD-71-43      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.16    C6-CC-84-3D-E2-67      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.17    C6-87-B3-C0-55-95      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.18    58-47-CA-7F-7A-72      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.19    92-17-9B-43-95-9A      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.30    08-ED-ED-04-D9-DD      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.31    80-97-1B-02-2B-FF      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.32    8C-90-2D-D1-2C-78      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.33    8C-90-2D-D1-2C-4C      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.34    8C-90-2D-D0-FB-D8      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.35    98-BA-5F-E6-DB-F4      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.36    98-25-4A-4F-2B-1C      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.37    98-25-4A-4F-2B-F0      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.38    98-25-4A-4E-EE-50      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.39    78-8C-B5-52-29-58      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.40    C0-06-C3-2A-6C-64      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.41    EC-75-0C-D9-50-A4      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.42    E0-73-E7-F5-C4-0F      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.50    AC-67-84-86-89-4B      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.51    AC-67-84-8F-18-DA      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.52    AC-67-84-85-CB-BF      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.53    44-07-0B-D9-DA-90      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.54    00-F6-20-58-C9-AB      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.55    20-DF-B9-4D-CD-94      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.56    48-D6-D5-5B-17-25      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.57    CC-F4-11-C2-49-4F      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.58    48-D6-D5-F1-54-B3      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.60    80-48-2C-32-2C-2F      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.61    D0-3F-27-DA-C8-3E      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.62    D0-3F-27-D9-57-D6      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.63    D0-3F-27-FE-9F-99      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.64    D0-3F-27-FE-96-C9      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.65    D0-3F-27-1D-2B-B1      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.66    80-48-2C-93-43-2F      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.67    80-48-2C-93-43-3E      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.70    80-48-2C-67-08-23      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.71    D0-3F-27-0C-6B-3B      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.72    D0-3F-27-06-7C-D1      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.73    D0-3F-27-0C-5F-12      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.74    80-48-2C-5A-CB-20      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.75    7C-78-B2-64-6F-FF      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.76    7C-78-B2-64-76-FB      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.77    7C-78-B2-98-6C-06      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.80    BC-07-1D-74-2C-59      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.81    BC-07-1D-74-21-55      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.82    BC-07-1D-74-37-6D      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.83    BC-07-1D-74-36-54      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.84    D4-AD-FC-E9-68-38      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.85    D4-AD-FC-E7-FA-4A      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.86    D0-C9-07-63-AB-58      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.87    D0-C9-07-63-3D-B4      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.230   6E-B6-C5-A2-41-9D      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.229   84-2F-57-AF-45-F0      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.226   1A-2C-7E-6A-06-7C      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.209   3A-96-66-6F-C6-17      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.203   C0-E5-DA-7C-B2-2A      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.206   40-1A-58-4A-D3-68      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.225   72-E1-BE-D2-D3-FA      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.222   5A-1C-1A-35-FC-3A      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.205   AC-67-84-8F-E7-08      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.218   0C-96-E6-7A-FC-AF      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.201   48-D6-D5-91-3F-54      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan0         100.64.0.1      26-12-AC-1A-80-01      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+
+(config)#

@@ -1,0 +1,54 @@
+
+== services-minisforum-um890 (192.168.0.12) ==
+
+== jrenewhite@192.168.0.12:22 ==
+Password for jrenewhite@192.168.0.12: Key installed and verified.
+Keeping this password for subsequent targets if needed.
+
+All targets completed successfully.
+exit=0
+
+== ai-gpu-minisforum-790S7 (192.168.0.13) ==
+
+== jrenewhite@192.168.0.13:22 ==
+Password for jrenewhite@192.168.0.13: Key installed and verified.
+Keeping this password for subsequent targets if needed.
+
+All targets completed successfully.
+exit=0
+
+== orangepi5-ultra (192.168.0.14) ==
+
+== jrenewhite@192.168.0.14:22 ==
+Password for jrenewhite@192.168.0.14: Key installed and verified.
+Keeping this password for subsequent targets if needed.
+
+All targets completed successfully.
+exit=0
+
+== orangepi5-max (192.168.0.15) ==
+
+== jrenewhite@192.168.0.15:22 ==
+Password for jrenewhite@192.168.0.15: Key installed and verified.
+Keeping this password for subsequent targets if needed.
+
+All targets completed successfully.
+exit=0
+
+== orangepi5-a (192.168.0.16) ==
+
+== jrenewhite@192.168.0.16:22 ==
+Password for jrenewhite@192.168.0.16: Key installed and verified.
+Keeping this password for subsequent targets if needed.
+
+All targets completed successfully.
+exit=0
+
+== orangepi5-b (192.168.0.17) ==
+
+== jrenewhite@192.168.0.17:22 ==
+Password for jrenewhite@192.168.0.17: Key installed and verified.
+Keeping this password for subsequent targets if needed.
+
+All targets completed successfully.
+exit=0

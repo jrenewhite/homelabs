@@ -1,0 +1,31 @@
+
+== management-hp-elitedesk-800-g4 (192.168.0.10) ==
+tcp22=unreachable
+
+== nas-aoostar-wtr-pro (192.168.0.11) ==
+tcp22=reachable
+key_access=not_ready
+
+== services-minisforum-um890 (192.168.0.12) ==
+tcp22=reachable
+key_access=not_ready
+
+== ai-gpu-minisforum-790S7 (192.168.0.13) ==
+tcp22=reachable
+key_access=not_ready
+
+== orangepi5-ultra (192.168.0.14) ==
+tcp22=reachable
+key_access=not_ready
+
+== orangepi5-max (192.168.0.15) ==
+tcp22=reachable
+key_access=not_ready
+
+== orangepi5-a (192.168.0.16) ==
+tcp22=reachable
+key_access=not_ready
+
+== orangepi5-b (192.168.0.17) ==
+tcp22=reachable
+key_access=not_ready
