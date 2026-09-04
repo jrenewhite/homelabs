@@ -1,0 +1,6 @@
+
+== root@192.168.0.11:22 ==
+Password for root@192.168.0.11: Key installed and verified.
+Keeping this password for subsequent targets if needed.
+
+All targets completed successfully.

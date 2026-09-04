@@ -1,0 +1,9 @@
+
+== 192.168.0.10 ==
+tcp22=unreachable
+
+== 192.168.0.18 ==
+tcp22=unreachable
+
+== 192.168.0.19 ==
+tcp22=unreachable
