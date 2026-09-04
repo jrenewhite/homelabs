@@ -45,7 +45,11 @@ case "$1" in
     ;;
   omada)
     shift
-    (( $# )) || die "Missing Omada command"
+    if (( $# == 0 )); then
+      printf 'Missing Omada command\n\n' >&2
+      usage >&2
+      exit 2
+    fi
     cmd="$1"; shift
     case "$cmd" in
       probe) exec "$HERE/omada/omada-probe.sh" "$@" ;;
