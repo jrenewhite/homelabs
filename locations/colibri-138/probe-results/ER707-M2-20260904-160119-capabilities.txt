@@ -1,0 +1,205 @@
+13:Mac Address         - CC-BA-BD-D2-21-98
+44:  show system-time ntp                                 Display system NTP server address.
+51:  show ip route static                                 Display entry information of static IP route.
+52:  show ip dhcp server pool                             View DHCP server address pool.
+53:  show ip dhcp server status                           Check DHCP server status.
+59:  show dhcp server                                     Display DHCP server information.
+60:  show dhcp server client-list                         View DHCP server client information
+61:  show dhcp relay                                      Display DHCP relay information.
+84:  no ip dhcp server pool                               Delete the DHCP server address pool.
+90:  no service dhcp server                               Turn off DHCP.
+112:  system-time ntp timezone ntp-server1                 Set preferred NTP server address
+113:  system-time ntp timezone ntp-server1 ntp-server2     Set the secondary NTP server address
+117:  ip dhcp server pool                                  Create a DHCP server address pool and enter the DHCP configuration view.
+126:  service dhcp server                                  Enable DHCP.
+136:(config)#show ip dhcp server pool
+139:	status dhcp_mode:dhcp_server	
+143:	status leasetime:120	
+146:(config)#show dhcp server client-list
+148:client name:--	
+149:	bind:0	
+153:	leasetime:1:32:23	
+155:client name:XVR Fam White Enciso	
+156:	bind:1	
+160:	leasetime:Permanent	
+162:client name:--	
+163:	bind:0	
+167:	leasetime:1:33:57	
+169:client name:POCO-M6	
+170:	bind:0	
+174:	leasetime:1:22:40	
+176:client name:HP-ENVY-X360	
+177:	bind:0	
+181:	leasetime:1:52:45	
+183:client name:POCO-F4-GT	
+184:	bind:0	
+188:	leasetime:1:9:45	
+190:client name:Joses-MBP	
+191:	bind:0	
+195:	leasetime:1:42:11	
+197:client name:Pixel-8-Pro	
+198:	bind:0	
+202:	leasetime:1:33:51	
+204:client name:--	
+205:	bind:0	
+209:	leasetime:1:0:26	
+211:client name:--	
+212:	bind:0	
+216:	leasetime:1:34:26	
+218:client name:WYZE_CAKP2JFUS-D03F27DAC83E	
+219:	bind:1	
+223:	leasetime:Permanent	
+225:client name:HL_PAN3-D03F27D957D6	
+226:	bind:1	
+230:	leasetime:Permanent	
+232:client name:THINKPAD-E580	
+233:	bind:0	
+237:	leasetime:1:25:23	
+239:client name:deco-X50-Outdoor	
+240:	bind:1	
+244:	leasetime:Permanent	
+246:client name:KP303	
+247:	bind:1	
+251:	leasetime:Permanent	
+253:client name:deco-S7	
+254:	bind:1	
+258:	leasetime:Permanent	
+260:client name:KP303	
+261:	bind:1	
+265:	leasetime:Permanent	
+267:client name:KP303	
+268:	bind:1	
+272:	leasetime:Permanent	
+274:client name:KP303	
+275:	bind:1	
+279:	leasetime:Permanent	
+281:client name:DX_PVLOC_80482C93433E	
+282:	bind:1	
+286:	leasetime:Permanent	
+288:client name:DX_PVLOC_80482C93432F	
+289:	bind:1	
+293:	leasetime:Permanent	
+295:client name:Wyze_Wi-Fi_Chime	
+296:	bind:1	
+300:	leasetime:Permanent	
+302:client name:--	
+303:	bind:1	
+307:	leasetime:Permanent	
+309:client name:HPF5C40E.lan	
+310:	bind:1	
+314:	leasetime:Permanent	
+316:client name:deco-M4R	
+317:	bind:1	
+321:	leasetime:Permanent	
+323:client name:--	
+324:	bind:1	
+328:	leasetime:Permanent	
+330:client name:Wyze Plug	
+331:	bind:1	
+335:	leasetime:Permanent	
+337:client name:--	
+338:	bind:1	
+342:	leasetime:Permanent	
+344:client name:deco-S7	
+345:	bind:1	
+349:	leasetime:Permanent	
+351:client name:deco-S7	
+352:	bind:1	
+356:	leasetime:Permanent	
+358:client name:--	
+359:	bind:1	
+363:	leasetime:Permanent	
+365:client name:Wyze Bulb v2	
+366:	bind:1	
+370:	leasetime:Permanent	
+372:client name:--	
+373:	bind:1	
+377:	leasetime:Permanent	
+379:client name:deco-X15	
+380:	bind:1	
+384:	leasetime:Permanent	
+386:client name:WYZE_CAM_OG	
+387:	bind:1	
+391:	leasetime:Permanent	
+393:client name:Wyze Plug	
+394:	bind:1	
+398:	leasetime:Permanent	
+400:client name:Wyze Plug	
+401:	bind:1	
+405:	leasetime:Permanent	
+407:client name:Wyze Outdoor Plug	
+408:	bind:1	
+412:	leasetime:Permanent	
+414:client name:deco-X50	
+415:	bind:1	
+419:	leasetime:Permanent	
+421:client name:WYZE_CAM_OG	
+422:	bind:1	
+426:	leasetime:Permanent	
+428:client name:Wyze Outdoor Plug	
+429:	bind:1	
+433:	leasetime:Permanent	
+435:client name:Wyze Outdoor Plug	
+436:	bind:1	
+440:	leasetime:Permanent	
+442:client name:Wyze Outdoor Plug	
+443:	bind:1	
+447:	leasetime:Permanent	
+449:client name:deco-X50	
+450:	bind:1	
+454:	leasetime:Permanent	
+456:client name:Google-Home-Mini	
+457:	bind:1	
+461:	leasetime:Permanent	
+463:client name:Google-Home-Mini	
+464:	bind:1	
+468:	leasetime:Permanent	
+470:client name:Google-Home-Mini	
+471:	bind:1	
+475:	leasetime:Permanent	
+477:client name:Google-Home-Mini	
+478:	bind:1	
+482:	leasetime:Permanent	
+484:client name:orangepi5-max	
+485:	bind:1	
+489:	leasetime:Permanent	
+491:client name:orangepi5-a	
+492:	bind:1	
+496:	leasetime:Permanent	
+498:client name:orangepi5-ultra	
+499:	bind:1	
+503:	leasetime:Permanent	
+505:client name:orangepi5-b	
+506:	bind:1	
+510:	leasetime:Permanent	
+512:client name:ai-gpu	
+513:	bind:1	
+517:	leasetime:Permanent	
+519:client name:services	
+520:	bind:1	
+524:	leasetime:Permanent	
+526:client name:--	
+527:	bind:1	
+531:	leasetime:Permanent	
+533:client name:--	
+534:	bind:0	
+538:	leasetime:1:23:15	
+540:client name:--	
+541:	bind:0	
+545:	leasetime:1:21:11	
+547:client name:--	
+548:	bind:0	
+552:	leasetime:1:34:26	
+554:client name:Google-Home-Mini	
+555:	bind:0	
+559:	leasetime:1:30:18	
+561:client name:Google-Nest-Mini	
+562:	bind:1	
+566:	leasetime:Permanent	
+568:client name:--	
+569:	bind:1	
+573:	leasetime:Permanent	
+575:client name:--	
+576:	bind:1	
+580:	leasetime:Permanent	
+585:Interface     IP Address      MACAdress              Type      AGE       	

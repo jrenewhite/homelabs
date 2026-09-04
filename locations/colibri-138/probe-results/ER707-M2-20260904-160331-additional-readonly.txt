@@ -1,0 +1,72 @@
+Router password for jrenewhite@192.168.0.1: spawn ssh -p 22 -o StrictHostKeyChecking=accept-new -o UserKnownHostsFile=/home/jrenewhite/.ssh/known_hosts -o PreferredAuthentications=password,keyboard-interactive -o PubkeyAuthentication=no -o NumberOfPasswordPrompts=1 -o ConnectTimeout=8 jrenewhite@192.168.0.1
+jrenewhite@192.168.0.1's password: 
+
+>enable
+
+#help
+
+Commands available:
+  help                                                 Show available commands
+  exit                                                 Exit from current mode
+  enable                                               Turn on privileged commands
+  disable                                              Turn off privileged commands
+  configure                                            Enter configuration mode
+  show system-info                                     Display system information.
+  show history                                         Display command history.
+  show interface switchport                            Display interface switch port information.
+  show interface vlan                                  Display interface VLAN information.
+  show arp                                             Display ARP entry information.
+  show ikev1 policy                                    Display ikev1 module entry information.
+  show ikev2 policy                                    Display ikev2 module entry information.
+  show transform-set                                   Display transform-set module entry information.
+  show crypto map                                      Display map module entry information.
+  show crypto ipsec sa                                 Display the SA information of the established IPSec.
+  show all ikev1 policy                                Display all ikev1 module entry information.
+  show all ikev2 policy                                Display all ikev2 module entry information.
+  show all transform-set                               Display all transform-set module entry information.
+  show all crypto map                                  Display all map module entry information.
+  show ip rip                                          Display RIP interface information.
+  show ip ospf                                         Display ospf information.
+  show ip ospf database                                Display the database information of OSPF.
+  show ip ospf neighbor                                Display OSPF neighbor table information.
+  show ip ospf interface                               Display the interface information of OSPF.
+  show ip route static                                 Display entry information of static IP route.
+  show ip http configuration                           Display http configuration.
+  show network                                         Display OSPF network information.
+  show nat virtual-server                              Display the entry information of NAT virtual-server.
+  show nat one-to-one                                  Display the entry information of one-to-one NAT.
+  show nat alg                                         Display the entry information of NAT ALG.
+  show snmp-server                                     Display SNMP server configuration.
+  show ssh configuration                               Display SSH configuration information.
+  ping                                                 Ping ip address.
+  tracert                                              traceroute ip address.
+  clear history                                        Clear previously run commands.
+  reboot                                               Reboot device.
+
+#config
+
+(config)#show dhcp server
+---------------------------------------------------------------------	
+DHCP server configuration information:LAN	
+	option name LAN	
+	option ipaddr 192.168.0.1	
+	option netmask 255.255.255.0	
+	option dhcp_mode dhcp_server	
+	option enable on	
+	option relay_enable off	
+	option vlan_id 1	
+	option ipaddr_start 192.168.0.100	
+	option ipaddr_end 192.168.0.230	
+	option leasetime 120	
+	option pri_dns 192.168.0.14	
+	option snd_dns 192.168.0.15	
+---------------------------------------------------------------------	
+
+(config)#show ip dhcp server status
+---------------------------------------------------------------------	
+name:LAN	
+	enable:on	
+	DHCP server is enable	
+---------------------------------------------------------------------	
+
+(config)#

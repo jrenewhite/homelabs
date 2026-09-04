@@ -1,0 +1,2 @@
+tr: range-endpoints of ':-.' are in reverse collating sequence order
+ERROR: Invalid MAC address

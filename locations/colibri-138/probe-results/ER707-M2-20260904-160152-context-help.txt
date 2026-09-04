@@ -1,0 +1,59 @@
+Router password for jrenewhite@192.168.0.1: spawn ssh -p 22 -o StrictHostKeyChecking=accept-new -o UserKnownHostsFile=/home/jrenewhite/.ssh/known_hosts -o PreferredAuthentications=password,keyboard-interactive -o PubkeyAuthentication=no -o NumberOfPasswordPrompts=1 -o ConnectTimeout=8 jrenewhite@192.168.0.1
+jrenewhite@192.168.0.1's password: 
+
+>enable
+
+#config
+
+(config)#ip dhcp server pool LAN
+
+(config-dhcp-server)#help
+
+Commands available:
+  help                                                 Show available commands
+  exit                                                 Exit from current mode
+  show system-info                                     Display system information.
+  show history                                         Display command history.
+  show interface switchport                            Display interface switch port information.
+  show interface vlan                                  Display interface VLAN information.
+  show arp                                             Display ARP entry information.
+  show ikev1 policy                                    Display ikev1 module entry information.
+  show ikev2 policy                                    Display ikev2 module entry information.
+  show transform-set                                   Display transform-set module entry information.
+  show crypto map                                      Display map module entry information.
+  show crypto ipsec sa                                 Display the SA information of the established IPSec.
+  show all ikev1 policy                                Display all ikev1 module entry information.
+  show all ikev2 policy                                Display all ikev2 module entry information.
+  show all transform-set                               Display all transform-set module entry information.
+  show all crypto map                                  Display all map module entry information.
+  show ip rip                                          Display RIP interface information.
+  show ip ospf                                         Display ospf information.
+  show ip ospf database                                Display the database information of OSPF.
+  show ip ospf neighbor                                Display OSPF neighbor table information.
+  show ip ospf interface                               Display the interface information of OSPF.
+  show ip route static                                 Display entry information of static IP route.
+  show ip http configuration                           Display http configuration.
+  show network                                         Display OSPF network information.
+  show nat virtual-server                              Display the entry information of NAT virtual-server.
+  show nat one-to-one                                  Display the entry information of one-to-one NAT.
+  show nat alg                                         Display the entry information of NAT ALG.
+  show snmp-server                                     Display SNMP server configuration.
+  show ssh configuration                               Display SSH configuration information.
+  clear history                                        Clear previously run commands.
+  no ip dhcp relay helper-address                      Delete DHCP relay server address.
+  no default-gateway                                   Delete DHCP gateway address.
+  no domain-name                                       Delete DHCP domain name.
+  no dns-server                                        Delete DHCP DNS IP address.
+  no option                                            Delete DHCP option.
+  ip dhcp relay helper-address                         Set DHCP relay server address.
+  ip-mask                                              Set the address and mask of the DHCP server.
+  vlan-id                                              Set the VLAN corresponding to the DHCP server.
+  lease                                                Set DHCP lease.
+  default-gateway                                      Set DHCP gateway address.
+  domain-name                                          Set DHCP domain name.
+  dns-server dns1                                      Set DHCP primary DNS IP address.
+  dns-server dns2                                      Set DHCP secondary DNS IP address.
+  option138 ip-address                                 Configure DHCP option138.
+  option                                               Configure DHCP option.
+
+(config-dhcp-server)#
