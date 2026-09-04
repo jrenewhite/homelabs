@@ -1,0 +1,13 @@
+site:
+  id: legaria-94
+  name: Legaria 94
+
+network:
+  lan_cidr: null
+  gateway: null
+
+router:
+  model: null
+  mode: null
+
+infrastructure: []
