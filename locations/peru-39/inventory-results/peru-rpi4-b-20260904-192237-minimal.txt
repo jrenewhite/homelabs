@@ -1,0 +1,96 @@
+# Minimal host identity probe
+
+## Host and OS
+peru-rpi4-b
+ Static hostname: peru-rpi4-b
+       Icon name: computer
+      Machine ID: 3a57c6dfa71f41569b5c67aad611bbe9
+         Boot ID: 0db3a4e47fce49158e497aa847f01028
+Operating System: Armbian 26.5.1 trixie
+          Kernel: Linux 6.18.32-current-bcm2711
+    Architecture: arm64
+PRETTY_NAME="Armbian 26.5.1 trixie"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.5
+ID=debian
+HOME_URL="https://www.armbian.com"
+SUPPORT_URL="https://forum.armbian.com"
+BUG_REPORT_URL="https://www.armbian.com/bugs"
+ARMBIAN_PRETTY_NAME="Armbian 26.5.1 trixie"
+
+## Management network
+1.1.1.1 via 192.168.0.1 dev end0 src 192.168.0.18 uid 1000 \    cache 
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+end0             UP             d8:3a:dd:24:b3:bb <BROADCAST,MULTICAST,UP,LOWER_UP> 
+wlan0            DOWN           d8:3a:dd:24:b3:bc <BROADCAST,MULTICAST> 
+tailscale0       UNKNOWN        <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> 
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+end0             UP             192.168.0.18/24 metric 100 fe80::da3a:ddff:fe24:b3bb/64 
+wlan0            DOWN           
+tailscale0       UNKNOWN        100.121.97.111/32 fd7a:115c:a1e0::1d32:6170/128 fe80::ec7d:5001:4e99:2cca/64 
+
+## Hardware
+sys_vendor=product_name=product_version=board_vendor=board_name=Raspberry Pi 4 Model B Rev 1.5
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               ARM
+Model name:                              Cortex-A72
+Model:                                   3
+Thread(s) per core:                      1
+Core(s) per cluster:                     4
+Socket(s):                               -
+Cluster(s):                              1
+Stepping:                                r0p3
+Frequency boost:                         disabled
+CPU(s) scaling MHz:                      100%
+CPU max MHz:                             1800.0000
+CPU min MHz:                             600.0000
+BogoMIPS:                                108.00
+Flags:                                   fp asimd evtstrm crc32 cpuid
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               192 KiB (4 instances)
+L2 cache:                                1 MiB (1 instance)
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Vulnerable
+Vulnerability Spectre v1:                Mitigation; __user pointer sanitization
+Vulnerability Spectre v2:                Vulnerable
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       288Mi       7.0Gi       8.9Mi       484Mi       7.3Gi
+Swap:          3.8Gi          0B       3.8Gi
+
+## Storage
+NAME    TRAN MODEL               SERIAL         SIZE
+sda     usb  WD Green 2.5 1000GB 232776801344 931.5G
+mmcblk0 mmc                      0xd9311f51    57.8G
+zram0                                           3.8G
+zram1                                            50M
+zram2                                             0B
+
+## PCI and USB
+00:00.0 PCI bridge [0604]: Broadcom Inc. and subsidiaries BCM2711 PCIe Bridge [14e4:2711] (rev 20)
+01:00.0 USB controller [0c03]: VIA Technologies, Inc. VL805/806 xHCI USB 3.0 Controller [1106:3483] (rev 01)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
+Bus 001 Device 003: ID 152d:0576 JMicron Technology Corp. / JMicron USA Technology Corp. Gen1 SATA 6Gb/s Bridge
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub

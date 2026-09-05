@@ -1,0 +1,100 @@
+# Minimal host identity probe
+
+## Host and OS
+peru-rpi5-a
+ Static hostname: peru-rpi5-a
+       Icon name: computer
+      Machine ID: 522085aa631f43d89d37382e5c35b634
+         Boot ID: 514fdfb2fa434e748d9dd8c53baa8551
+Operating System: Armbian 26.5.1 trixie
+          Kernel: Linux 6.18.32-current-bcm2711
+    Architecture: arm64
+PRETTY_NAME="Armbian 26.5.1 trixie"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.5
+ID=debian
+HOME_URL="https://www.armbian.com"
+SUPPORT_URL="https://forum.armbian.com"
+BUG_REPORT_URL="https://www.armbian.com/bugs"
+ARMBIAN_PRETTY_NAME="Armbian 26.5.1 trixie"
+
+## Management network
+1.1.1.1 via 192.168.0.1 dev end0 src 192.168.0.14 uid 1000 \    cache 
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+end0             UP             88:a2:9e:0d:31:dc <BROADCAST,MULTICAST,UP,LOWER_UP> 
+wlan0            DOWN           88:a2:9e:0d:31:dd <BROADCAST,MULTICAST> 
+docker0          DOWN           02:42:47:d9:7e:e1 <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+tailscale0       UNKNOWN        <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> 
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+end0             UP             192.168.0.14/24 metric 100 fe80::8aa2:9eff:fe0d:31dc/64 
+wlan0            DOWN           
+docker0          DOWN           172.17.0.1/16 
+tailscale0       UNKNOWN        100.68.9.59/32 fd7a:115c:a1e0::8c32:93b/128 fe80::7eab:ee7b:37d0:262c/64 
+
+## Hardware
+sys_vendor=product_name=product_version=board_vendor=board_name=Raspberry Pi 5 Model B Rev 1.1
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               ARM
+Model name:                              Cortex-A76
+Model:                                   1
+Thread(s) per core:                      1
+Core(s) per cluster:                     4
+Socket(s):                               -
+Cluster(s):                              1
+Stepping:                                r4p1
+Frequency boost:                         disabled
+CPU(s) scaling MHz:                      100%
+CPU max MHz:                             2400.0000
+CPU min MHz:                             1500.0000
+BogoMIPS:                                108.00
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+L1d cache:                               256 KiB (4 instances)
+L1i cache:                               256 KiB (4 instances)
+L2 cache:                                2 MiB (4 instances)
+L3 cache:                                2 MiB (1 instance)
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; CSV2, BHB
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+               total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       306Mi       6.8Gi       9.1Mi       810Mi       7.5Gi
+Swap:          3.9Gi          0B       3.9Gi
+
+## Storage
+NAME    TRAN MODEL       SERIAL         SIZE
+sda     usb  ADATA SU630 4P3121624752 223.6G
+mmcblk0 mmc              0xd9311f54    57.8G
+zram0                                   3.9G
+zram1                                    50M
+zram2                                     0B
+
+## PCI and USB
+0002:00:00.0 PCI bridge [0604]: Broadcom Inc. and subsidiaries BCM2712 PCIe Bridge [14e4:2712] (rev 30)
+0002:01:00.0 Ethernet controller [0200]: Raspberry Pi Ltd RP1 PCIe 2.0 South Bridge [1de4:0001]
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 002: ID 152d:0576 JMicron Technology Corp. / JMicron USA Technology Corp. Gen1 SATA 6Gb/s Bridge
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
