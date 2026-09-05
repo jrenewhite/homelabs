@@ -78,7 +78,7 @@ read_password() {
 
 normalize_mac() {
   local raw
-  raw="$(tr -d ':-. ' <<<"${1:-}" | tr '[:upper:]' '[:lower:]')"
+  raw="$(tr -d ':. -' <<<"${1:-}" | tr '[:upper:]' '[:lower:]')"
   [[ "$raw" =~ ^[0-9a-f]{12}$ ]] || return 1
   printf '%s:%s:%s:%s:%s:%s\n' \
     "${raw:0:2}" "${raw:2:2}" "${raw:4:2}" \

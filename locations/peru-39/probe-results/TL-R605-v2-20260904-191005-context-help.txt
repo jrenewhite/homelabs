@@ -1,0 +1,165 @@
+Router password for jrenewhite@192.168.0.1: spawn ssh -p 22 -o StrictHostKeyChecking=accept-new -o UserKnownHostsFile=/home/jrenewhite/.ssh/known_hosts -o PreferredAuthentications=password,keyboard-interactive -o PubkeyAuthentication=no -o NumberOfPasswordPrompts=1 -o ConnectTimeout=8 jrenewhite@192.168.0.1
+jrenewhite@192.168.0.1's password: 
+
+>enable
+
+#help
+
+Commands available:
+  help                                                 Show available commands
+  exit                                                 Exit from current mode
+  enable                                               Turn on privileged commands
+  disable                                              Turn off privileged commands
+  configure                                            Enter configuration mode
+  show system-info                                     Display system information.
+  show history                                         Display command history.
+  show interface switchport                            Display interface switch port information.
+  show interface vlan                                  Display interface VLAN information.
+  show arp                                             Display ARP entry information.
+  show ikev1 policy                                    Display ikev1 module entry information.
+  show ikev2 policy                                    Display ikev2 module entry information.
+  show transform-set                                   Display transform-set module entry information.
+  show crypto map                                      Display map module entry information.
+  show crypto ipsec sa                                 Display the SA information of the established IPSec.
+  show all ikev1 policy                                Display all ikev1 module entry information.
+  show all ikev2 policy                                Display all ikev2 module entry information.
+  show all transform-set                               Display all transform-set module entry information.
+  show all crypto map                                  Display all map module entry information.
+  show ip rip                                          Display RIP interface information.
+  show ip ospf                                         Display ospf information.
+  show ip ospf database                                Display the database information of OSPF.
+  show ip ospf neighbor                                Display OSPF neighbor table information.
+  show ip ospf interface                               Display the interface information of OSPF.
+  show ip route static                                 Display entry information of static IP route.
+  show ip http configuration                           Display http configuration.
+  show network                                         Display OSPF network information.
+  show nat virtual-server                              Display the entry information of NAT virtual-server.
+  show nat one-to-one                                  Display the entry information of one-to-one NAT.
+  show nat alg                                         Display the entry information of NAT ALG.
+  show snmp-server                                     Display SNMP server configuration.
+  show ssh configuration                               Display SSH configuration information.
+  ping                                                 Ping ip address.
+  tracert                                              traceroute ip address.
+  clear history                                        Clear previously run commands.
+  reboot                                               Reboot device.
+
+#config
+
+(config)#help
+
+Commands available:
+  help                                                 Show available commands
+  exit                                                 Exit from current mode
+  show system-info                                     Display system information.
+  show history                                         Display command history.
+  show monitor session                                 Display session information.
+  show interface status                                Display interface status information.
+  show interface switchport                            Display interface switch port information.
+  show interface vlan                                  Display interface VLAN information.
+  show arp                                             Display ARP entry information.
+  show vlan                                            Display VLAN information.
+  show vlan summary                                    Display summary of VLAN information.
+  show ikev1 policy                                    Display ikev1 module entry information.
+  show ikev2 policy                                    Display ikev2 module entry information.
+  show transform-set                                   Display transform-set module entry information.
+  show crypto map                                      Display map module entry information.
+  show crypto ipsec sa                                 Display the SA information of the established IPSec.
+  show all ikev1 policy                                Display all ikev1 module entry information.
+  show all ikev2 policy                                Display all ikev2 module entry information.
+  show all transform-set                               Display all transform-set module entry information.
+  show all crypto map                                  Display all map module entry information.
+  show access-list                                     Display entry information of ACL rules.
+  show system-time                                     Display system time.
+  show system-time ntp                                 Display system NTP server address.
+  show time-range                                      Display time-range module entry information.
+  show ip rip                                          Display RIP interface information.
+  show ip ospf                                         Display ospf information.
+  show ip ospf database                                Display the database information of OSPF.
+  show ip ospf neighbor                                Display OSPF neighbor table information.
+  show ip ospf interface                               Display the interface information of OSPF.
+  show ip route static                                 Display entry information of static IP route.
+  show ip dhcp server pool                             View DHCP server address pool.
+  show ip dhcp server status                           Check DHCP server status.
+  show ip http configuration                           Display http configuration.
+  show network                                         Display OSPF network information.
+  show nat virtual-server                              Display the entry information of NAT virtual-server.
+  show nat one-to-one                                  Display the entry information of one-to-one NAT.
+  show nat alg                                         Display the entry information of NAT ALG.
+  show dhcp server                                     Display DHCP server information.
+  show dhcp server client-list                         View DHCP server client information
+  show dhcp relay                                      Display DHCP relay information.
+  show snmp-server                                     Display SNMP server configuration.
+  show ssh configuration                               Display SSH configuration information.
+  clear history                                        Clear previously run commands.
+  monitor session port                                 Set the observation port number.
+  monitor session source port                          Set the mirrored port number.
+  monitor session enable                               Turn on port mirroring.
+  monitor session ingress                              Observe the received data stream.
+  monitor session egress                               Observe the sent data stream.
+  monitor session both                                 Observe the number of received and sent data streams.
+  no monitor session                                   Disable port mirroring or delete monitor session/monitor session source port.
+  no monitor session source port                       Delete monitor session source port.
+  no monitor session enable                            Disable port mirroring.
+  no vlan                                              Delete VLAN.
+  no crypto ikev1 policy                               Delete the ikev1 module entry.
+  no crypto ikev2 policy                               Delete the ikev2 module entry.
+  no crypto transform-set                              Remove the transform-set module entry.
+  no crypto map                                        Delete the map module entry.
+  no access-list ip                                    Delete the name of the ACL rule.
+  no time-range                                        Remove the time-range entry.
+  no router rip                                        Disable RIP.
+  no router ospf                                       Disable OSPF.
+  no ip route                                          Remove IP route entry.
+  no ip dhcp server pool                               Delete the DHCP server address pool.
+  no ip http server redirect-to-https                  Cancel http-to-https auto redirection.
+  no ip http secure-server                             Disable https service.
+  no nat alg                                           Delete NAT ALG entry.
+  no nat virtual-server                                Delete NAT virtual-server entry.
+  no nat one-to-one                                    Delete one-to-one NAT entry.
+  no service dhcp server                               Turn off DHCP.
+  no snmp-server v3 enable                             Reset SNMP v3 configuration.
+  no snmp-server v1-v2c enable                         Disable SNMP version 1 and version 2.
+  no snmp-server v1-v2c contact                        Reset the contact information of the SNMP server.
+  no snmp-server v1-v2c host                           Reset the host information of the SNMP server.
+  no snmp-server v1-v2c device-name                    Reset the device name information of the SNMP server.
+  no snmp-server v1-v2c location                       Reset the location information of the SNMP server.
+  no snmp-server v1-v2c community                      Reset the community information of the SNMP server.
+  no ssh server                                        Disable SSH service.
+  interface vlan                                       Enter interface mode by vlan id
+  interface switchport                                 Enter interface mode by port
+  vlan                                                 Create new VLAN.
+  router vlan                                          Enter VLAN view.
+  router rip                                           Enable RIP and enter RIP view.
+  router ospf                                          Enable OSPF and enter OSPF view.
+  crypto ikev1 policy                                  Create a new ikev1 module entry.
+  crypto ikev2 policy                                  Create a new ikev2 module entry.
+  crypto ipsec transform-set                           New transform-set module entry.
+  crypto map                                           Create a map module entry.
+  access-list ip rule deny                             Deny access, configure ACL related information.
+  access-list ip rule permit                           Allow access and configure ACL related information.
+  system-time manual                                   Manually set the system time.
+  system-time ntp timezone ntp-server1                 Set preferred NTP server address
+  system-time ntp timezone ntp-server1 ntp-server2     Set the secondary NTP server address
+  local-user username password                         Set local user password.
+  time-range week-date time-slice                      Configure time-range time.
+  ip route                                             Add IP route.
+  ip dhcp server pool                                  Create a DHCP server address pool and enter the DHCP configuration view.
+  ip http port                                         Set http port number.
+  ip http server redirect-to-https                     Set http-to-https auto redirection.
+  ip http secure-port                                  Set https port number.
+  ip http secure-server                                Enable https server.
+  ip http session timeout                              Set http session timeout.
+  nat alg                                              Turn on a NAT ALG function.
+  nat virtual-server                                   Create NAT virtual-server.
+  nat one-to-one                                       Create one-to-one NAT.
+  service dhcp server                                  Enable DHCP.
+  snmp-server v3 username password enable              Enable SNMP server v3.
+  snmp-server v1-v2c enable                            Enable SNMP version 1 and version 2.
+  snmp-server v1-v2c contact                           Set SNMP server contact.
+  snmp-server v1-v2c host                              Set SNMP server host.
+  snmp-server v1-v2c device-name                       Set SNMP server device name.
+  snmp-server v1-v2c location                          Set SNMP server location.
+  snmp-server v1-v2c community                         Set SNMP server community.
+  ssh server                                           Enable SSH service.
+
+(config)#

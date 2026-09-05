@@ -1,0 +1,392 @@
+Router password for jrenewhite@192.168.0.1: spawn ssh -p 22 -o StrictHostKeyChecking=accept-new -o UserKnownHostsFile=/home/jrenewhite/.ssh/known_hosts -o PreferredAuthentications=password,keyboard-interactive -o PubkeyAuthentication=no -o NumberOfPasswordPrompts=1 -o ConnectTimeout=8 jrenewhite@192.168.0.1
+jrenewhite@192.168.0.1's password: 
+
+>enable
+
+#show system-info
+System Description  - Omada Gigabit VPN Gateway
+System Name         - ER605
+Contact Information - www.tp-link.com
+Hardware Version    - ER605 v2.20
+Firmware Version    - 2.2.5 Build 20240522 Rel.75860
+Mac Address         - E0-D3-62-24-4D-82
+System Time         - 2026-09-04 17:09:31
+Running Time        - 56 day - 13 hour - 5 min - 50 sec
+
+#config
+
+(config)#help
+
+Commands available:
+  help                                                 Show available commands
+  exit                                                 Exit from current mode
+  show system-info                                     Display system information.
+  show history                                         Display command history.
+  show monitor session                                 Display session information.
+  show interface status                                Display interface status information.
+  show interface switchport                            Display interface switch port information.
+  show interface vlan                                  Display interface VLAN information.
+  show arp                                             Display ARP entry information.
+  show vlan                                            Display VLAN information.
+  show vlan summary                                    Display summary of VLAN information.
+  show ikev1 policy                                    Display ikev1 module entry information.
+  show ikev2 policy                                    Display ikev2 module entry information.
+  show transform-set                                   Display transform-set module entry information.
+  show crypto map                                      Display map module entry information.
+  show crypto ipsec sa                                 Display the SA information of the established IPSec.
+  show all ikev1 policy                                Display all ikev1 module entry information.
+  show all ikev2 policy                                Display all ikev2 module entry information.
+  show all transform-set                               Display all transform-set module entry information.
+  show all crypto map                                  Display all map module entry information.
+  show access-list                                     Display entry information of ACL rules.
+  show system-time                                     Display system time.
+  show system-time ntp                                 Display system NTP server address.
+  show time-range                                      Display time-range module entry information.
+  show ip rip                                          Display RIP interface information.
+  show ip ospf                                         Display ospf information.
+  show ip ospf database                                Display the database information of OSPF.
+  show ip ospf neighbor                                Display OSPF neighbor table information.
+  show ip ospf interface                               Display the interface information of OSPF.
+  show ip route static                                 Display entry information of static IP route.
+  show ip dhcp server pool                             View DHCP server address pool.
+  show ip dhcp server status                           Check DHCP server status.
+  show ip http configuration                           Display http configuration.
+  show network                                         Display OSPF network information.
+  show nat virtual-server                              Display the entry information of NAT virtual-server.
+  show nat one-to-one                                  Display the entry information of one-to-one NAT.
+  show nat alg                                         Display the entry information of NAT ALG.
+  show dhcp server                                     Display DHCP server information.
+  show dhcp server client-list                         View DHCP server client information
+  show dhcp relay                                      Display DHCP relay information.
+  show snmp-server                                     Display SNMP server configuration.
+  show ssh configuration                               Display SSH configuration information.
+  clear history                                        Clear previously run commands.
+  monitor session port                                 Set the observation port number.
+  monitor session source port                          Set the mirrored port number.
+  monitor session enable                               Turn on port mirroring.
+  monitor session ingress                              Observe the received data stream.
+  monitor session egress                               Observe the sent data stream.
+  monitor session both                                 Observe the number of received and sent data streams.
+  no monitor session                                   Disable port mirroring or delete monitor session/monitor session source port.
+  no monitor session source port                       Delete monitor session source port.
+  no monitor session enable                            Disable port mirroring.
+  no vlan                                              Delete VLAN.
+  no crypto ikev1 policy                               Delete the ikev1 module entry.
+  no crypto ikev2 policy                               Delete the ikev2 module entry.
+  no crypto transform-set                              Remove the transform-set module entry.
+  no crypto map                                        Delete the map module entry.
+  no access-list ip                                    Delete the name of the ACL rule.
+  no time-range                                        Remove the time-range entry.
+  no router rip                                        Disable RIP.
+  no router ospf                                       Disable OSPF.
+  no ip route                                          Remove IP route entry.
+  no ip dhcp server pool                               Delete the DHCP server address pool.
+  no ip http server redirect-to-https                  Cancel http-to-https auto redirection.
+  no ip http secure-server                             Disable https service.
+  no nat alg                                           Delete NAT ALG entry.
+  no nat virtual-server                                Delete NAT virtual-server entry.
+  no nat one-to-one                                    Delete one-to-one NAT entry.
+  no service dhcp server                               Turn off DHCP.
+  no snmp-server v3 enable                             Reset SNMP v3 configuration.
+  no snmp-server v1-v2c enable                         Disable SNMP version 1 and version 2.
+  no snmp-server v1-v2c contact                        Reset the contact information of the SNMP server.
+  no snmp-server v1-v2c host                           Reset the host information of the SNMP server.
+  no snmp-server v1-v2c device-name                    Reset the device name information of the SNMP server.
+  no snmp-server v1-v2c location                       Reset the location information of the SNMP server.
+  no snmp-server v1-v2c community                      Reset the community information of the SNMP server.
+  no ssh server                                        Disable SSH service.
+  interface vlan                                       Enter interface mode by vlan id
+  interface switchport                                 Enter interface mode by port
+  vlan                                                 Create new VLAN.
+  router vlan                                          Enter VLAN view.
+  router rip                                           Enable RIP and enter RIP view.
+  router ospf                                          Enable OSPF and enter OSPF view.
+  crypto ikev1 policy                                  Create a new ikev1 module entry.
+  crypto ikev2 policy                                  Create a new ikev2 module entry.
+  crypto ipsec transform-set                           New transform-set module entry.
+  crypto map                                           Create a map module entry.
+  access-list ip rule deny                             Deny access, configure ACL related information.
+  access-list ip rule permit                           Allow access and configure ACL related information.
+  system-time manual                                   Manually set the system time.
+  system-time ntp timezone ntp-server1                 Set preferred NTP server address
+  system-time ntp timezone ntp-server1 ntp-server2     Set the secondary NTP server address
+  local-user username password                         Set local user password.
+  time-range week-date time-slice                      Configure time-range time.
+  ip route                                             Add IP route.
+  ip dhcp server pool                                  Create a DHCP server address pool and enter the DHCP configuration view.
+  ip http port                                         Set http port number.
+  ip http server redirect-to-https                     Set http-to-https auto redirection.
+  ip http secure-port                                  Set https port number.
+  ip http secure-server                                Enable https server.
+  ip http session timeout                              Set http session timeout.
+  nat alg                                              Turn on a NAT ALG function.
+  nat virtual-server                                   Create NAT virtual-server.
+  nat one-to-one                                       Create one-to-one NAT.
+  service dhcp server                                  Enable DHCP.
+  snmp-server v3 username password enable              Enable SNMP server v3.
+  snmp-server v1-v2c enable                            Enable SNMP version 1 and version 2.
+  snmp-server v1-v2c contact                           Set SNMP server contact.
+  snmp-server v1-v2c host                              Set SNMP server host.
+  snmp-server v1-v2c device-name                       Set SNMP server device name.
+  snmp-server v1-v2c location                          Set SNMP server location.
+  snmp-server v1-v2c community                         Set SNMP server community.
+  ssh server                                           Enable SSH service.
+
+(config)#show ip dhcp server pool
+---------------------------------------------------------------------	
+name:LAN	
+	status dhcp_mode:dhcp_server	
+	status enable:on	
+	status ipaddr_start:192.168.0.100	
+	status ipaddr_end:192.168.0.199	
+	status leasetime:120	
+---------------------------------------------------------------------	
+
+(config)#show dhcp server client-list
+---------------------------------------------------------------------	
+client name:HP-ENVY-X360	
+	bind:0	
+	interface:lan	
+	macaddr:40-1A-58-4A-D3-68	
+	ipaddr:192.168.0.143	
+	leasetime:1:53:53	
+---------------------------------------------------------------------	
+client name:Pixel-8-Pro	
+	bind:0	
+	interface:lan	
+	macaddr:1A-AB-0E-2B-AE-78	
+	ipaddr:192.168.0.142	
+	leasetime:1:44:21	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:7A-70-8C-EB-16-3D	
+	ipaddr:192.168.0.141	
+	leasetime:1:44:14	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:7C-78-B2-A3-DF-1B	
+	ipaddr:192.168.0.133	
+	leasetime:1:10:7	
+---------------------------------------------------------------------	
+client name:WYZE_CAKP2JFUS-D03F2791729B	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-91-72-9B	
+	ipaddr:192.168.0.125	
+	leasetime:1:46:24	
+---------------------------------------------------------------------	
+client name:HL_PAN3-D03F27DC0C83	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-DC-0C-83	
+	ipaddr:192.168.0.123	
+	leasetime:1:5:56	
+---------------------------------------------------------------------	
+client name:HL_PAN3-D03F27D96435	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-D9-64-35	
+	ipaddr:192.168.0.122	
+	leasetime:1:5:51	
+---------------------------------------------------------------------	
+client name:WYZE_CAKP2JFUS-80482C286A3A	
+	bind:0	
+	interface:lan	
+	macaddr:80-48-2C-28-6A-3A	
+	ipaddr:192.168.0.121	
+	leasetime:1:36:29	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-1D-31-CA	
+	ipaddr:192.168.0.145	
+	leasetime:1:41:44	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-1D-31-9E	
+	ipaddr:192.168.0.144	
+	leasetime:1:56:39	
+---------------------------------------------------------------------	
+client name:WYZE_CAKP2JFUS-D03F27849CAC	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-84-9C-AC	
+	ipaddr:192.168.0.124	
+	leasetime:1:6:39	
+---------------------------------------------------------------------	
+client name:peru-nas	
+	bind:1	
+	interface:lan	
+	macaddr:0C-EF-15-96-0A-07	
+	ipaddr:192.168.0.11	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:deco-X15	
+	bind:0	
+	interface:lan	
+	macaddr:EC-75-0C-D9-51-38	
+	ipaddr:192.168.0.100	
+	leasetime:1:51:53	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-1C-D7-C5	
+	ipaddr:192.168.0.101	
+	leasetime:1:37:29	
+---------------------------------------------------------------------	
+client name:deco-M4R	
+	bind:0	
+	interface:lan	
+	macaddr:C0-06-C3-2A-6B-BC	
+	ipaddr:192.168.0.102	
+	leasetime:1:30:19	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-CE-BF-A7	
+	ipaddr:192.168.0.103	
+	leasetime:1:10:58	
+---------------------------------------------------------------------	
+client name:deco-M4R	
+	bind:0	
+	interface:lan	
+	macaddr:C0-06-C3-2A-6A-28	
+	ipaddr:192.168.0.105	
+	leasetime:1:0:10	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-1C-E8-A8	
+	ipaddr:192.168.0.106	
+	leasetime:1:22:47	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:40-91-51-01-85-D4	
+	ipaddr:192.168.0.109	
+	leasetime:1:45:40	
+---------------------------------------------------------------------	
+client name:WYZE_CAM_OG	
+	bind:0	
+	interface:lan	
+	macaddr:D0-3F-27-FE-9F-7B	
+	ipaddr:192.168.0.112	
+	leasetime:1:25:25	
+---------------------------------------------------------------------	
+client name:--	
+	bind:0	
+	interface:lan	
+	macaddr:7C-78-B2-AE-1B-64	
+	ipaddr:192.168.0.113	
+	leasetime:1:52:33	
+---------------------------------------------------------------------	
+client name:deco-M4R	
+	bind:0	
+	interface:lan	
+	macaddr:74-DA-88-53-FF-DC	
+	ipaddr:192.168.0.114	
+	leasetime:1:30:45	
+---------------------------------------------------------------------	
+client name:peru-rpi5-ultra	
+	bind:1	
+	interface:lan	
+	macaddr:88-A2-9E-0D-31-DC	
+	ipaddr:192.168.0.14	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:peru-ai-gpu	
+	bind:1	
+	interface:lan	
+	macaddr:58-47-CA-7F-86-00	
+	ipaddr:192.168.0.13	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:peru-rpi5-max	
+	bind:1	
+	interface:lan	
+	macaddr:88-A2-9E-0D-33-54	
+	ipaddr:192.168.0.15	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:peru-rpi4-b	
+	bind:1	
+	interface:lan	
+	macaddr:D8-3A-DD-24-B3-BB	
+	ipaddr:192.168.0.18	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:peru-rpi4-a	
+	bind:1	
+	interface:lan	
+	macaddr:D8-3A-DD-24-CB-D1	
+	ipaddr:192.168.0.17	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:peru-services	
+	bind:1	
+	interface:lan	
+	macaddr:38-05-25-31-87-90	
+	ipaddr:192.168.0.12	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+client name:peru-management	
+	bind:1	
+	interface:lan	
+	macaddr:84-A9-3E-12-A6-9B	
+	ipaddr:192.168.0.10	
+	leasetime:Permanent	
+---------------------------------------------------------------------	
+
+(config)#show arp
+---------------------------------------------------------------------------------------------------	
+Interface     IP Address      MACAdress              Type      AGE       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.10    84-A9-3E-12-A6-9B      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.12    38-05-25-31-87-90      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.13    58-47-CA-7F-86-00      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.14    88-A2-9E-0D-31-DC      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.15    88-A2-9E-0D-33-54      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.17    D8-3A-DD-24-CB-D1      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.18    D8-3A-DD-24-B3-BB      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.11    0C-EF-15-96-0A-07      Local     N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan4094      100.64.0.1      26-12-AC-1A-80-01      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.100   EC-75-0C-D9-51-38      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.125   D0-3F-27-91-72-9B      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.122   D0-3F-27-D9-64-35      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.121   80-48-2C-28-6A-3A      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.142   1A-AB-0E-2B-AE-78      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.141   7A-70-8C-EB-16-3D      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.124   D0-3F-27-84-9C-AC      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.123   D0-3F-27-DC-0C-83      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+vlan1         192.168.0.143   40-1A-58-4A-D3-68      Dynamic   N/A       	
+---------------------------------------------------------------------------------------------------	
+
+(config)#

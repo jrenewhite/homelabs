@@ -1,0 +1,106 @@
+12:Mac Address         - E0-D3-62-24-4D-82
+43:  show system-time ntp                                 Display system NTP server address.
+50:  show ip route static                                 Display entry information of static IP route.
+51:  show ip dhcp server pool                             View DHCP server address pool.
+52:  show ip dhcp server status                           Check DHCP server status.
+58:  show dhcp server                                     Display DHCP server information.
+59:  show dhcp server client-list                         View DHCP server client information
+60:  show dhcp relay                                      Display DHCP relay information.
+83:  no ip dhcp server pool                               Delete the DHCP server address pool.
+89:  no service dhcp server                               Turn off DHCP.
+111:  system-time ntp timezone ntp-server1                 Set preferred NTP server address
+112:  system-time ntp timezone ntp-server1 ntp-server2     Set the secondary NTP server address
+116:  ip dhcp server pool                                  Create a DHCP server address pool and enter the DHCP configuration view.
+125:  service dhcp server                                  Enable DHCP.
+135:(config)#show ip dhcp server pool
+138:	status dhcp_mode:dhcp_server	
+142:	status leasetime:120	
+145:(config)#show dhcp server client-list
+147:client name:HP-ENVY-X360	
+148:	bind:0	
+152:	leasetime:1:53:53	
+154:client name:Pixel-8-Pro	
+155:	bind:0	
+159:	leasetime:1:44:21	
+161:client name:--	
+162:	bind:0	
+166:	leasetime:1:44:14	
+168:client name:--	
+169:	bind:0	
+173:	leasetime:1:10:7	
+175:client name:WYZE_CAKP2JFUS-D03F2791729B	
+176:	bind:0	
+180:	leasetime:1:46:24	
+182:client name:HL_PAN3-D03F27DC0C83	
+183:	bind:0	
+187:	leasetime:1:5:56	
+189:client name:HL_PAN3-D03F27D96435	
+190:	bind:0	
+194:	leasetime:1:5:51	
+196:client name:WYZE_CAKP2JFUS-80482C286A3A	
+197:	bind:0	
+201:	leasetime:1:36:29	
+203:client name:--	
+204:	bind:0	
+208:	leasetime:1:41:44	
+210:client name:--	
+211:	bind:0	
+215:	leasetime:1:56:39	
+217:client name:WYZE_CAKP2JFUS-D03F27849CAC	
+218:	bind:0	
+222:	leasetime:1:6:39	
+224:client name:peru-nas	
+225:	bind:1	
+229:	leasetime:Permanent	
+231:client name:deco-X15	
+232:	bind:0	
+236:	leasetime:1:51:53	
+238:client name:--	
+239:	bind:0	
+243:	leasetime:1:37:29	
+245:client name:deco-M4R	
+246:	bind:0	
+250:	leasetime:1:30:19	
+252:client name:--	
+253:	bind:0	
+257:	leasetime:1:10:58	
+259:client name:deco-M4R	
+260:	bind:0	
+264:	leasetime:1:0:10	
+266:client name:--	
+267:	bind:0	
+271:	leasetime:1:22:47	
+273:client name:--	
+274:	bind:0	
+278:	leasetime:1:45:40	
+280:client name:WYZE_CAM_OG	
+281:	bind:0	
+285:	leasetime:1:25:25	
+287:client name:--	
+288:	bind:0	
+292:	leasetime:1:52:33	
+294:client name:deco-M4R	
+295:	bind:0	
+299:	leasetime:1:30:45	
+301:client name:peru-rpi5-ultra	
+302:	bind:1	
+306:	leasetime:Permanent	
+308:client name:peru-ai-gpu	
+309:	bind:1	
+313:	leasetime:Permanent	
+315:client name:peru-rpi5-max	
+316:	bind:1	
+320:	leasetime:Permanent	
+322:client name:peru-rpi4-b	
+323:	bind:1	
+327:	leasetime:Permanent	
+329:client name:peru-rpi4-a	
+330:	bind:1	
+334:	leasetime:Permanent	
+336:client name:peru-services	
+337:	bind:1	
+341:	leasetime:Permanent	
+343:client name:peru-management	
+344:	bind:1	
+348:	leasetime:Permanent	
+353:Interface     IP Address      MACAdress              Type      AGE       	
