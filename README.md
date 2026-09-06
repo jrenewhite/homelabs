@@ -73,8 +73,8 @@ mkdir -p ~/Code
 git clone https://github.com/jrenewhite/homelabs.git ~/Code/homelabs
 cd ~/Code/homelabs
 git pull --ff-only
-scripts/homelab --help
-scripts/check-deps.sh
+bash scripts/homelab --help
+bash scripts/check-deps.sh
 ```
 
 Restaura los `.env` de los sitios aplicables mediante una transferencia privada
@@ -99,5 +99,5 @@ source <(sed 's/\r$//' locations/<sitio>/.env)
 ```
 
 Después, comprueba acceso con llave a un host conocido y vuelve a ejecutar
-`scripts/check-deps.sh`. Consulta las instrucciones de cada sitio antes de
+`bash scripts/check-deps.sh`. Consulta las instrucciones de cada sitio antes de
 iniciar Stage 0 o Stage 1.
