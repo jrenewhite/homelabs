@@ -3,11 +3,58 @@ site:
   name: Perú 39
 
 network:
-  lan_cidr: null
-  gateway: null
+  lan_cidr: 192.168.0.0/24
+  gateway: 192.168.0.1
 
 router:
-  model: TL-R605-v2
+  model: ER605-v2.20
   mode: standalone
 
-infrastructure: []
+infrastructure:
+  - id: 1
+    name: management-hp-elitedesk-800-g4
+    mac: 84-A9-3E-12-A6-9B
+    reserved_ip: 192.168.0.10
+    observed_ip: 192.168.0.10
+    enabled: true
+    role: management
+
+  - id: 2
+    name: peru-nas
+    mac: 0C-EF-15-96-0A-07
+    reserved_ip: 192.168.0.11
+    observed_ip: 192.168.0.11
+    enabled: true
+    role: nas
+
+  - id: 3
+    name: opi-zero-3-infra-a
+    mac: 02-00-72-21-D8-D1
+    reserved_ip: null
+    observed_ip: 192.168.0.119
+    enabled: true
+    role: arm-node
+
+  - id: 4
+    name: opi-zero-3-infra-b
+    mac: 02-00-48-2E-01-41
+    reserved_ip: null
+    observed_ip: 192.168.0.118
+    enabled: true
+    role: arm-node
+
+  - id: 5
+    name: orangepi5-b
+    mac: C6-87-B3-C0-55-95
+    reserved_ip: null
+    observed_ip: 192.168.0.120
+    enabled: true
+    role: arm-node
+
+  - id: 6
+    name: orangepi5-max
+    mac: C0-74-2B-FD-71-43
+    reserved_ip: null
+    observed_ip: 192.168.0.126
+    enabled: true
+    role: arm-node
